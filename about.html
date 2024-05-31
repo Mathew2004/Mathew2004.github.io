@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.scss">
     <!--Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <!--Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
-   
-   
+
+
+
     <!--AOS CDN-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -44,10 +46,11 @@
         body {
             background-color: #1E2125;
             color: #fff;
-            background-image: linear-gradient(to left, rgb(8, 8, 14),rgba(15, 31, 28, 0.575))
+            background-image: linear-gradient(to left, rgb(8, 8, 14), rgba(15, 31, 28, 0.575))
         }
+
         @media screen and (max-width: 880px) {
-            body{
+            body {
                 width: 100%;
             }
         }
@@ -116,12 +119,10 @@
 
         .navbar-dark {
 
-         
+
             padding-bottom: 10px;
             background-color: #212529;
-            background-image: linear-gradient(to left, rgb(8, 8, 14),rgba(15, 31, 28, 0.575))
-            
-
+            background-image: linear-gradient(to left, rgb(8, 8, 14), rgba(15, 31, 28, 0.575))
         }
 
         .b-example-divider {
@@ -169,33 +170,37 @@
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
                 aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">EVAN<span class="text-warning">GEL</span></h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">EVAN<span class="text-warning">GEL</span>
+                    </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item text-light">
-                            <a class="nav-link {% block homeactive %} {% endblock %} display-5 fw-bold mx-4 " aria-current="page"
-                                href="/"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                            <a class="nav-link  display-5 fw-bold mx-4 "
+                                aria-current="page" href="/"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% block aboutactive %} {% endblock %} display-5 fw-bold  mx-4" href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+                            <a class="nav-link active display-5 fw-bold  mx-4"
+                                href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% block projactive %} {% endblock %} display-5 fw-bold mx-4" href="/allprojects"><i class="fa fa-code-fork" aria-hidden="true"></i> Projects</a>
+                            <a class="nav-link display-5 fw-bold mx-4"
+                                href="/projects"><i class="fa fa-code-fork" aria-hidden="true"></i> Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% block contactactive %} {% endblock %} display-5 fw-bold mx-4" href="/contact"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                            <a class="nav-link {% block contactactive %} {% endblock %} display-5 fw-bold mx-4"
+                                href="/contact"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                         </li>
 
                     </ul>
-                   <!-- Button to  trigger Login modal --
+                    <!-- Button to  trigger Login modal --
                 <a class="btn rounded-pill btn-primary mx-2 px-3" href="/login" type="submit">Login</a>
                 <a class="btn rounded-pill btn-danger px-3 " type="submit" href="/signup/">Join</a>
                    -->
                 </div>
-               
+
 
             </div>
         </div>
@@ -203,152 +208,158 @@
     </nav>
 
 
-    
-
-<!--About Intro-->
 
 
-<div class="px-4 py-5 my-3 text-center about-section" data-aos="fade-up"
-data-aos-duration="3000">
-    <img class="d-block mx-auto mb-4" src="img/about.png" alt="" >
+    <!--About Intro-->
 
-    <div class="links">
-        <a href="https://www.linkedin.com/in/evangel04/" target="_blank" class="my-3 mx-2" ><i class="ri-linkedin-box-fill fs-3"></i></a>
-        <a href="https://github.com/mathew2004" target="_blank" class="my-3 mx-2" ><i class="ri-github-fill fs-3"></i></a>
-        <a href="https://www.facebook.com/evanpurification/" target="_blank" class="my-3 mx-2" ><i class="ri-facebook-fill fs-3"></i></a>
-        <a href="https://www.youtube.com/codeground" target="_blank" class="my-3 mx-2" ><i class="ri-youtube-fill fs-3"></i></a>
+
+    <div class="px-4 py-5 my-3 text-center about-section" data-aos="fade-up" data-aos-duration="3000">
+        <img class="d-block mx-auto mb-4" src="img/about.png" alt="">
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/evangel04/" target="_blank" class="my-3 mx-2"><i
+                    class="ri-linkedin-box-fill fs-3"></i></a>
+            <a href="https://github.com/mathew2004" target="_blank" class="my-3 mx-2"><i
+                    class="ri-github-fill fs-3"></i></a>
+            <a href="https://www.facebook.com/evanpurification/" target="_blank" class="my-3 mx-2"><i
+                    class="ri-facebook-fill fs-3"></i></a>
+            <a href="https://www.youtube.com/codeground" target="_blank" class="my-3 mx-2"><i
+                    class="ri-youtube-fill fs-3"></i></a>
+        </div>
+
+
+
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                <i class="fa fa-quote-left"></i> My journey in the world of technology has led me through Python and
+                Django, enabling me to craft dynamic and responsive web experiences. With a keen eye for design, I've
+                sculpted visually appealing websites using HTML, CSS, JavaScript, and Bootstrap, while diving into the
+                backend realm with PHP and MySQL <i class="fa fa-quote-right"></i>
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="https://www.linkedin.com/in/evangel04/" target="_blank"
+                    class="btn btn-primary btn-lg px-4 gap-3"><i class="ri-linkedin-line mt-1"></i>Linkedin</a>
+                <a href="https://github.com/mathew2004" target="_blank" class="btn btn-outline-secondary btn-lg px-4"><i
+                        class="ri-file-download-line"></i>Resume</a>
+            </div>
+        </div>
+    </div>
+    <div class="b-example-divider"></div>
+
+
+    <div class="info-section container my-6">
+
+        <div class="info" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="fw-bold">Skills: </h2>
+            <ul>
+                <li><strong>Front-End:</strong> HTML, CSS, Bootstrap, Javascript </li>
+                <li><strong>Back-End:</strong> Django, Flask, PHP </li>
+                <li><strong>Database:</strong> MySQL, SQlite </li>
+                <li><strong>Programming Languages:</strong> Python, C, C++ </li>
+                <li><strong>Tools:</strong> Git, Github, PythonAnyWhere </li>
+                <li><strong>Software:</strong> MS Word, MS Powerpoint, MS Excel </li>
+                
+
+            </ul>
+
+        </div>
+
+        <div class="info" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="fw-bold">Education: </h2>
+            <b>B.Sc. Engineering (2023 - Now )</b>
+            <ul>
+
+
+                <li><strong>Institution:</strong> Rajshahi University of Engineering and Technology (RUET) </li>
+                <li><strong>Department:</strong> Computer Science and Engineering (CSE) </li>
+
+
+            </ul>
+
+        </div>
+
+        <div class="info" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="fw-bold">Personal Info: </h2>
+            <ul>
+                <li><strong>Name:</strong> Evangel Purification </li>
+                <li><strong>Email:</strong> purificationevan04@gmail.com </li>
+                <li><strong>Phone:</strong> +8801726655657 </li>
+                <li><strong>Date of Birth:</strong> March 13,2004 </li>
+                <li><strong>Blood Group:</strong> O-(ve) </li>
+                <li><strong>Religion:</strong> Christian </li>
+                <li><strong>Nationality:</strong> Bangladeshi </li>
+
+            </ul>
+
+        </div>
+
+
+
+
     </div>
 
-   
-    
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">
-       <i class="fa fa-quote-left"></i> {{about.description}} <i class="fa fa-quote-right"></i>
-    </p> 
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <a href="https://www.linkedin.com/in/evangel04/" target="_blank" class="btn btn-primary btn-lg px-4 gap-3"><i class="ri-linkedin-line mt-1"></i>Linkedin</a>
-        <a href="https://github.com/mathew2004" target="_blank" class="btn btn-outline-secondary btn-lg px-4"><i class="ri-file-download-line"></i>Resume</a>
-      </div>
-    </div>
-</div>
-<div class="b-example-divider"></div>
 
 
-<div class="info-section container my-6">
 
-    <div class="info" data-aos="zoom-in"
-    data-aos-duration="1000">
-        <h2 class="fw-bold">Skills:  </h2>
-        <ul>
-            <li><strong>Front-End:</strong> {{about.fend}} </li>
-            <li><strong>Back-End:</strong> {{about.bend}} </li>
-            <li><strong>Database:</strong> {{about.db}} </li>
-            <li><strong>Programming Languages:</strong> {{about.pl}} </li>
-            <li><strong>Tools:</strong> {{about.tools}} </li>
-            <li><strong>Software:</strong> {{about.software}} </li>
-            
-        </ul>
 
-    </div>
 
-    <div class="info" data-aos="zoom-in"
-    data-aos-duration="1000">
-        <h2 class="fw-bold">Education:  </h2>
-        <b >B.Sc. Engineering (2023 - Now )</b>
-        <ul>
-            
-            
-            <li><strong>Institution:</strong> Rajshahi University of Engineering and Technology (RUET)  </li>
-            <li><strong>Department:</strong> Computer Science and Engineering (CSE)  </li>
-            
-            
-        </ul>
+    <!--Footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="" class="mb-3 me-2 mb-md-0 fw-bold text-light text-decoration-none lh-1">
+                    EVANGEL
+                </a>
+                <span class="mb-3 mb-md-0 text-body-light text-light">© ALL OF THE RIGHTS RESERVED</span>
+            </div>
 
-    </div>
-
-    <div class="info" data-aos="zoom-in"
-    data-aos-duration="1000">
-        <h2 class="fw-bold">Personal Info:  </h2>
-        <ul>
-            <li><strong>Name:</strong> Evangel Purification </li>
-            <li><strong>Email:</strong> purificationevan04@gmail.com </li>
-            <li><strong>Phone:</strong> +8801726655657 </li>
-            <li><strong>Date of Birth:</strong> March 13,2004  </li>
-            <li><strong>Blood Group:</strong> O-(ve) </li>
-            <li><strong>Religion:</strong> Christian  </li>
-            <li><strong>Nationality:</strong> Bangladeshi </li>
-            
-        </ul>
-
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-light" href="https://www.linkedin.com/in/evangel04/" target="_blank"><i
+                            class="ri-linkedin-box-fill"></i></a></li>
+                <li class="ms-3"><a class="text-light" href="https://github.com/mathew2004" target="_blank"><i
+                            class="ri-github-fill"></i></a></li>
+                <li class="ms-3"><a class="text-light" href="https://www.facebook.com/evanpurification/"
+                        target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                <li class="ms-3"><a class="text-light" href="https://www.youtube.com/codeground" target="_blank"><i
+                            class="ri-youtube-fill"></i></a></li>
+            </ul>
+        </footer>
     </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
+    <script>
+        function load() {
+            document.querySelector(".preloader").style.display = "none";
+        }
 
-</div>
+        AOS.init();
 
+    </script>
 
+    <script src="../typed.js"></script>
 
-
-
-
-<!--Footer-->
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="" class="mb-3 me-2 mb-md-0 fw-bold text-light text-decoration-none lh-1">
-        EVANGEL
-      </a>
-      <span class="mb-3 mb-md-0 text-body-light text-light">© ALL OF THE RIGHTS RESERVED</span>
-    </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-light" href="https://www.linkedin.com/in/evangel04/" target="_blank" ><i class="ri-linkedin-box-fill"></i></a></li>
-      <li class="ms-3"><a class="text-light" href="https://github.com/mathew2004" target="_blank" ><i class="ri-github-fill"></i></a></li>
-      <li class="ms-3"><a class="text-light" href="https://www.facebook.com/evanpurification/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-      <li class="ms-3"><a class="text-light" href="https://www.youtube.com/codeground" target="_blank"><i class="ri-youtube-fill"></i></a></li>
-    </ul>
-  </footer>
-</div>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"></script>
-      
-  <script>
-      function load() {
-          document.querySelector(".preloader").style.display = "none";
-      }
-
-      AOS.init();
-
-  </script>
-
-<script src="../typed.js"></script>
-
-<script>
-     var typed = new Typed('.type', {
+    <script>
+        var typed = new Typed('.type', {
             strings: [
-            'Web developer', 
-            'CSE Student',
-            ''
+                'Web developer',
+                'CSE Student',
+                ''
             ],
             loop: true,
             typeSpeed: 80,
             backSpeed: 80,
-  
-          });
-</script>
+
+        });
+    </script>
 
 
 </body>
 
 </html>
-
-
-
-
