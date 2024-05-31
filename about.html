@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evangel Purification</title>
-    <link rel="icon" type="image/x-icon" href="img/about.png">
+    <link rel="icon" type="image/x-icon" href="/static/img/about.png">
     <!--CSS-->
 
     <link rel="stylesheet" href="style.css">
@@ -205,106 +205,83 @@
 
     
 
-<div class="home-container">
-    <div class="side1" 
->
-        <h4 > <span class="type"></span>  </h4>
-        <h2 class="">Hi, I am Evangel</h2>
-        <p>
-            Greetings! I'm a Computer Science and Engineering student at Rajshahi University of Engineering and Technology (RUET) 
-            with a burning curiosity for technology and a knack for problem-solving
+<!--About Intro-->
 
-        </p>
-        <a href="/about/">Learn More about me</a>
 
+<div class="px-4 py-5 my-3 text-center about-section" data-aos="fade-up"
+data-aos-duration="3000">
+    <img class="d-block mx-auto mb-4" src="img/about.png" alt="" >
+
+    <div class="links">
+        <a href="https://www.linkedin.com/in/evangel04/" target="_blank" class="my-3 mx-2" ><i class="ri-linkedin-box-fill fs-3"></i></a>
+        <a href="https://github.com/mathew2004" target="_blank" class="my-3 mx-2" ><i class="ri-github-fill fs-3"></i></a>
+        <a href="https://www.facebook.com/evanpurification/" target="_blank" class="my-3 mx-2" ><i class="ri-facebook-fill fs-3"></i></a>
+        <a href="https://www.youtube.com/codeground" target="_blank" class="my-3 mx-2" ><i class="ri-youtube-fill fs-3"></i></a>
     </div>
 
-    <div class="side2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300" data-aos-anchor="#example-anchor"
-    data-aos-offset="500"
->
-        <img src="/img/about.png" alt="model">
-    </div>
-
-</div>
-
-    <div class="box-home">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-    </div>
-
-</div>
-
-<div class="b-example-divider"></div>
-
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom" data-aos="zoom-in" data-aos-duration="1000">Recent Works</h2>
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-     
-
-      <div class="col" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(to bottom, rgba(14, 13, 14, 0.748), rgba(5, 17, 12, 0.786)),url('/img/projects/donor.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-2 mb-4 display-6 lh-1 fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quas vel iste minus repellendus adipisci quasi provident ab atque. Nihil. <br/>
-              <a href="/allprojects/" target="_blank" class="font-monospace badge rounded-pill bg-secondary" style="text-decoration: none;"><i class="fa fa-eye " height="32" width="32"></i>Read More</a> 
-            </p>
-
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <a href="" target="_blank" class="font-monospace badge rounded-pill bg-danger" style="text-decoration: none;"><i class="fa fa-eye " height="32" width="32"></i> View Site</a> 
-              </li>
-              <li class="mx-1 mt-auto">
-                <p class="badge rounded-pill bg-primary">Web</p>
-                
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    
-    </div>
-  
-    <center>
-        <a class="btn btn-outline-info" href="/allprojects" data-aos="fade-up">View All Projects</a>
-
-    </center>
-</div>
-
-
-
-
-<div class="b-example-divider"></div>
-
-<!--Skills-->
-
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom" data-aos="zoom-in" data-aos-duration="1000">Skills</h2>
-
-    <div class="skills-container py-3">
    
-        <div class="skill">
-            <img src="/img/skills/django.png" alt="">
-            <h5>Djnago</h5>
-            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped  bg-success" data-aos="fade-right"
-                data-aos-easing="ease-in-sine" style="width: 60%"></div>
-            </div>
-           
-        </div>
-     
-     
+    
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+       <i class="fa fa-quote-left"></i> {{about.description}} <i class="fa fa-quote-right"></i>
+    </p> 
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="https://www.linkedin.com/in/evangel04/" target="_blank" class="btn btn-primary btn-lg px-4 gap-3"><i class="ri-linkedin-line mt-1"></i>Linkedin</a>
+        <a href="https://github.com/mathew2004" target="_blank" class="btn btn-outline-secondary btn-lg px-4"><i class="ri-file-download-line"></i>Resume</a>
       </div>
-      
+    </div>
+</div>
+<div class="b-example-divider"></div>
+
+
+<div class="info-section container my-6">
+
+    <div class="info" data-aos="zoom-in"
+    data-aos-duration="1000">
+        <h2 class="fw-bold">Skills:  </h2>
+        <ul>
+            <li><strong>Front-End:</strong> {{about.fend}} </li>
+            <li><strong>Back-End:</strong> {{about.bend}} </li>
+            <li><strong>Database:</strong> {{about.db}} </li>
+            <li><strong>Programming Languages:</strong> {{about.pl}} </li>
+            <li><strong>Tools:</strong> {{about.tools}} </li>
+            <li><strong>Software:</strong> {{about.software}} </li>
+            
+        </ul>
+
+    </div>
+
+    <div class="info" data-aos="zoom-in"
+    data-aos-duration="1000">
+        <h2 class="fw-bold">Education:  </h2>
+        <b >B.Sc. Engineering (2023 - Now )</b>
+        <ul>
+            
+            
+            <li><strong>Institution:</strong> Rajshahi University of Engineering and Technology (RUET)  </li>
+            <li><strong>Department:</strong> Computer Science and Engineering (CSE)  </li>
+            
+            
+        </ul>
+
+    </div>
+
+    <div class="info" data-aos="zoom-in"
+    data-aos-duration="1000">
+        <h2 class="fw-bold">Personal Info:  </h2>
+        <ul>
+            <li><strong>Name:</strong> Evangel Purification </li>
+            <li><strong>Email:</strong> purificationevan04@gmail.com </li>
+            <li><strong>Phone:</strong> +8801726655657 </li>
+            <li><strong>Date of Birth:</strong> March 13,2004  </li>
+            <li><strong>Blood Group:</strong> O-(ve) </li>
+            <li><strong>Religion:</strong> Christian  </li>
+            <li><strong>Nationality:</strong> Bangladeshi </li>
+            
+        </ul>
+
+    </div>
+
 
 
 
@@ -351,7 +328,7 @@
 
   </script>
 
-<script src="/typed.js"></script>
+<script src="../typed.js"></script>
 
 <script>
      var typed = new Typed('.type', {

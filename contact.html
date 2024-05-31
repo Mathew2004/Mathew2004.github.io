@@ -180,13 +180,13 @@
                                 href="/"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% block aboutactive %} {% endblock %} display-5 fw-bold  mx-4" href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+                            <a class="nav-link  display-5 fw-bold  mx-4" href="/about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% block projactive %} {% endblock %} display-5 fw-bold mx-4" href="/allprojects"><i class="fa fa-code-fork" aria-hidden="true"></i> Projects</a>
+                            <a class="nav-link  display-5 fw-bold mx-4" href="/allprojects"><i class="fa fa-code-fork" aria-hidden="true"></i> Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% block contactactive %} {% endblock %} display-5 fw-bold mx-4" href="/contact"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                            <a class="nav-link active display-5 fw-bold mx-4" href="/about.html" onclick="rewriteUrl(event, 'about')"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                         </li>
 
                     </ul>
@@ -205,111 +205,165 @@
 
     
 
-<div class="home-container">
-    <div class="side1" 
->
-        <h4 > <span class="type"></span>  </h4>
-        <h2 class="">Hi, I am Evangel</h2>
-        <p>
-            Greetings! I'm a Computer Science and Engineering student at Rajshahi University of Engineering and Technology (RUET) 
-            with a burning curiosity for technology and a knack for problem-solving
-
-        </p>
-        <a href="/about/">Learn More about me</a>
-
-    </div>
-
-    <div class="side2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300" data-aos-anchor="#example-anchor"
-    data-aos-offset="500"
->
-        <img src="/img/about.png" alt="model">
-    </div>
-
-</div>
-
-    <div class="box-home">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-    </div>
-
-</div>
-
-<div class="b-example-divider"></div>
-
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom" data-aos="zoom-in" data-aos-duration="1000">Recent Works</h2>
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-     
-
-      <div class="col" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(to bottom, rgba(14, 13, 14, 0.748), rgba(5, 17, 12, 0.786)),url('/img/projects/donor.jpg'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-2 mb-4 display-6 lh-1 fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quas vel iste minus repellendus adipisci quasi provident ab atque. Nihil. <br/>
-              <a href="/allprojects/" target="_blank" class="font-monospace badge rounded-pill bg-secondary" style="text-decoration: none;"><i class="fa fa-eye " height="32" width="32"></i>Read More</a> 
-            </p>
-
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <a href="" target="_blank" class="font-monospace badge rounded-pill bg-danger" style="text-decoration: none;"><i class="fa fa-eye " height="32" width="32"></i> View Site</a> 
-              </li>
-              <li class="mx-1 mt-auto">
-                <p class="badge rounded-pill bg-primary">Web</p>
-                
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+    <style>
     
-    </div>
-  
-    <center>
-        <a class="btn btn-outline-info" href="/allprojects" data-aos="fade-up">View All Projects</a>
-
-    </center>
-</div>
-
-
-
-
-<div class="b-example-divider"></div>
-
-<!--Skills-->
-
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom" data-aos="zoom-in" data-aos-duration="1000">Skills</h2>
-
-    <div class="skills-container py-3">
-   
-        <div class="skill">
-            <img src="/img/skills/django.png" alt="">
-            <h5>Djnago</h5>
-            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped  bg-success" data-aos="fade-right"
-                data-aos-easing="ease-in-sine" style="width: 60%"></div>
-            </div>
-           
+      .contact-form{
+         
+          margin-top: 10%;
+          margin-bottom: 5%;
+          width: 70%;
+          border: 1px solid #999;
+          box-shadow: 1px 2px 35px 0px rgba(0,0,0,0.87);
+    -webkit-box-shadow: 1px 2px 35px 0px rgba(0,0,0,0.87);
+    -moz-box-shadow: 1px 2px 35px 0px rgba(0,0,0,0.87);
+      }
+    
+      .contact-form .form-control{
+          border-radius:1rem;
+      }
+      .contact-image{
+          text-align: center;
+      }
+      .contact-image img{
+          border-radius: 6rem;
+          width: 11%;
+          margin-top: -3%;
+          transform: rotate(29deg);
+      }
+      .contact-form form{
+          padding: 14%;
+      }
+      .contact-form form .row{
+          margin-bottom: -7%;
+      }
+      .contact-form h3{
+          margin-bottom: 8%;
+          margin-top: -10%;
+          text-align: center;
+          color: #e5e344;
+      }
+      .contact-form .btnContact {
+          width: 50%;
+          border: none;
+          border-radius: 1rem;
+          padding: 1.5%;
+          background: #dc3545;
+          font-weight: 600;
+          color: #fff;
+          cursor: pointer;
+      }
+      .btnContactSubmit
+      {
+          width: 50%;
+          border-radius: 1rem;
+          padding: 1.5%;
+          color: #fff;
+          background-color: #0062cc;
+          border: none;
+          cursor: pointer;
+      }
+    
+    
+    
+      @media screen and (max-width: 880px) {
+        .contact-form{
+         
+         margin-top: 10%;
+         margin-bottom: 5%;
+         width: 100%;
+        
+          }
+          .contact-form .form-control{
+              border-radius:1rem;
+          }
+          .contact-form .btnContact {
+      width: 100%;
+          }
+          
+          .contact-image img{
+              display: none;
+          }
+          .contact-form form{
+              padding: 10px 3px;
+          }
+     
+     }
+    
+    
+    
+    </style>
+    
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
         </div>
-     
-     
-      </div>
+        <form method="POST" action="/contact/" data-aos="fade-up" data-aos-duration="2000">  {% csrf_token %} 
+            <h3 class="fw-bold text-light">CONTACT <span class="text-warning">ME</span></h3>
+          
+    
+           <div class="row">
+    
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control my-2" placeholder="Your Name *" value="" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control my-2" placeholder="Your Email *" value="" required />
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <textarea name="msg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact my-3" value="Send Message"  />
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                  <div class="direct-contact-container" data-aos="fade-right" data-aos-duration="2000">
       
-
-
-
-</div>
-
+                    <ul class="contact-list">
+                      <li class="list-item"><i class="ri-map-pin-2-line"><span class="contact-text place">Bonpara, Natore, Rajshahi, BD</span></i></li>
+                      
+                      <li class="list-item"><i class="ri-phone-line"><span class="contact-text phone"><a href="tel:+8801726655657" title="Give me a call">+8801726655657</a></span></i></li>
+                      
+                      <li class="list-item"><i class="ri-mail-line"><span class="contact-text gmail"><a href="mailto:purificationevan04p@gmail.com" title="Send me an email">purificationevan04p@gmail.com</a></span></i></li>
+                      
+                    </ul>
+            
+                    <hr>
+                    <ul class="social-media-list">
+                      <li><a href="https://github.com/mathew2004"" target="_blank" class="contact-icon">
+                        <i class="ri-github-fill" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="https://www.linkedin.com/in/evangel04/" target="_blank" class="contact-icon">
+                        <i class="ri-linkedin-fill" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="https://www.facebook.com/evanpurification/" target="_blank" class="contact-icon">
+                        <i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="https://www.youtube.com/codeground" target="_blank" class="contact-icon">
+                        <i class="ri-youtube-fill" aria-hidden="true"></i></a>
+                      </li>       
+                    </ul>
+                    <hr>
+            
+                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+            
+                  </div>
+                </div>
+            </div>
+        
+       
+    
+       
+        
+        
+        </form>
+    </div>
+    
 
 
 
@@ -341,6 +395,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"></script>
+
+      <script>
+        function rewriteUrl(event, path) {
+            event.preventDefault();
+            history.pushState(null, null, '/' + path);
+            // Load the content dynamically if necessary
+            document.title = path.charAt(0).toUpperCase() + path.slice(1);
+        }
+
+        window.addEventListener('popstate', function(event) {
+            // Handle back/forward navigation if necessary
+            console.log('Location changed to: ' + document.location);
+        });
+    </script>
       
   <script>
       function load() {
